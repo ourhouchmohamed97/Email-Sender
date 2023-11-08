@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="poster.png">
+    <title>Email Sender</title> 
+</head>
+<body>
+    
+    <div class="container">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">Welcome to our Email app</h1>
+                <p class="paraghraph">you can text your friend <span>everytime</span> and <span>everwhere</span> you want!</p>
+            </div>
+        </div>
+    
+    <div class="form-section">
+        <h1>Hi, friend!</h1>
+        <p>welcome to our Email Sender form!</p>
+        <form>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="text" id="to" required autocomplete="off" placeholder="Example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" required autocomplete="off" placeholder="Collaboration Request">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea type="text" name="message" id="message" required spellcheck="false" autocomplete="off" placeholder="Enter your text ..."></textarea>
+            </div>
+            <div class="form-group result-container">
+                <p class="result">Email send successfully.</p>
+                <button type="button" class="send-btn">Send Email</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
